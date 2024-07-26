@@ -13,21 +13,17 @@ public class TripToAlgoland {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
 		int m = sc.nextInt();
-		Map<String, Map<String, String>> map = new HashMap<>();
-		Map<String, String> map1 = new HashMap<>();
-		Map<String, Integer> vis = new HashMap<>();
 		
 		
 		Map<String,List<String>> mapp=new HashMap<>();
 		
-
+	Map<String, Integer> vis = new HashMap<>();
 	for(int i=0;i<m;i++) {
 		
 		
 	String a=sc.next();
 	String b=sc.next();
 	String c=sc.next();
-	//vis.put(a, 0);
 	if(!vis.containsKey(a)) {
 		vis.put(a,0);
 	}
@@ -45,16 +41,7 @@ public class TripToAlgoland {
 	mapp.get(a).add(c);
 	}
 	
-//	map1.put(b,c);
-//	if(!map.containsKey(a)) {
-//
-//		map.put(a,new HashMap<>());
-//		//map1.put(sc.nextLine(),sc.nextLine());
-//		map.get(a).put(b, c);
-//		
-//	}else {
-//		map.get(a).put(b, c);
-//	}
+
 
 }
 	String src=sc.next();
@@ -62,10 +49,8 @@ public class TripToAlgoland {
 	int count=0;
 	Queue<String> queue = new LinkedList<>();
 	List<String> road=new ArrayList<>();
-	//int[] distance = new int[n + 1];
 	queue.add(src);
 	vis.put(src,1);
-	//distance[src]=1;
 	
 	
 	
@@ -82,6 +67,7 @@ public class TripToAlgoland {
 				count++;
 				if(inMap.equals(dest)) {
 					System.out.println(count);
+					System.out.println();
 					for(String res:road) {
 						System.out.println(res);
 					}
@@ -94,10 +80,7 @@ public class TripToAlgoland {
 		}
 		
 	}
-	System.out.println("Impossible");
-	//System.out.println(map.get("matrix-city"));
-//	for(String res:road) {
-//		System.out.println(res);
-//	}
+	System.out.print("Impossible");
+
 }
 }
