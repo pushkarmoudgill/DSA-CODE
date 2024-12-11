@@ -6,13 +6,13 @@ public class SingleNumber {
 		// TODO Auto-generated method stub
 		int [] nums= {2,2,1};
 		
-		int ans=nums[0];
+		int val=nums[0];
         for(int i=1;i<nums.length;i++){
 
 
-         ans^=nums[i];
+         val^=nums[i];
         }
-            System.out.println(ans);
+            System.out.println(val);
 	}
 
 }
