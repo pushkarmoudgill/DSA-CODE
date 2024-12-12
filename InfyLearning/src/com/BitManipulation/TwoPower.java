@@ -5,17 +5,17 @@ public class TwoPower {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int n=4;
+		int num=4;
 		
-		boolean ans=power(n);
+		boolean ans=power(num);
 		System.out.println(ans);
 
 	}
 	
 	
-	static boolean power(int n) {
+	static boolean power(int num) {
 		
-		return n>0 &&( n&(n-1))==0;
+		return num>0 &&( num&(num-1))==0;
 	}
 
 }
