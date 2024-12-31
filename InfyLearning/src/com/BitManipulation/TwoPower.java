@@ -7,13 +7,13 @@ public class TwoPower {
 		
 		int num=4;
 		
-		boolean ans=power(num);
+		boolean ans=findpower(num);
 		System.out.println(ans);
 
 	}
 	
 	
-	static boolean power(int num) {
+	static boolean findpower(int num) {
 		
 		return num>0 &&( num&(num-1))==0;
 	}
