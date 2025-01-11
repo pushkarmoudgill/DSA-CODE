@@ -2,13 +2,18 @@ package cpp;
 
 public class ReverseNo {
 	public static void main(String [] args) {
-		int n=12;
+		int n=371;
+		int sum=0;
 		while(n>0) {
-			int a=n/10;
+			
 			int r=n%10;
-			n=a;
+			 sum =(int) (sum+Math.pow(r, 3));
+			 
+			 n/=10;
 			
 		}
+		
+		System.out.println(sum);
 	}
 
 }
