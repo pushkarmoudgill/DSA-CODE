@@ -20,9 +20,9 @@ public class CheckAnagram {
 		}
 		
 		
-	int ans=	countAnagramSubString(s,t);
+	int val=	countAnagramSubString(s,t);
 	
-	System.out.println(ans);
+	System.out.println(val);
 
 		
 		
